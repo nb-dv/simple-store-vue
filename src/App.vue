@@ -1,12 +1,18 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <MainWrapper></MainWrapper>
   </div>
 </template>
+
+<script>
+  import MainWrapper from "@/components/v-wrapper";
+  export default {
+    name: 'app',
+    components: {
+      MainWrapper,
+    }
+  }
+</script>
 
 <style>
 #app {

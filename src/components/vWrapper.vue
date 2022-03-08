@@ -1,26 +1,37 @@
 <template>
   <div class="v-wrapper">
-    <v-catalog />
+    <vCatalog />
+    <vCart
+        v-if="CART.length"
+        :cart_data="CART"
+    />
   </div>
 </template>
 
 <script>
-  import vCatalog from './vCatalog';
+import vCatalog from './vCatalog';
+import vCart from './vCart';
+import { mapGetters } from 'vuex';
 
-  export default {
-    name: 'VWrapper',
-    components: {
-      vCatalog,
-    },
-    props: {},
-    data() {
-      return {};
-    },
-    computed: {},
-    methods: {},
-    watch: {},
-    mounted() {},
-  };
+export default {
+  name: 'vWrapper',
+  components: {
+    vCatalog,
+    vCart,
+  },
+  props: {},
+  data() {
+    return {};
+  },
+  computed: {
+    ...mapGetters([
+      'CART',
+    ]),
+  },
+  methods: {},
+  watch: {},
+  mounted() {},
+};
 </script>
 
 <style>

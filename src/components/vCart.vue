@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'v-cart',
+  name: 'vCart',
   components: {},
 }
 </script>

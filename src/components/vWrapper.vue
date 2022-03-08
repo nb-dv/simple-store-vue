@@ -5,10 +5,10 @@
 </template>
 
 <script>
-  import vCatalog from './v-catalog';
+  import vCatalog from './vCatalog';
 
   export default {
-    name: 'v-wrapper',
+    name: 'VWrapper',
     components: {
       vCatalog,
     },

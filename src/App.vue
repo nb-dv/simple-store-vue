@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <MainWrapper></MainWrapper>
+    <vWrapper></vWrapper>
   </div>
 </template>
 
 <script>
-  import MainWrapper from "@/components/v-wrapper";
+  import vWrapper from "@/components/vWrapper";
   export default {
     name: 'app',
     components: {
-      MainWrapper,
+      vWrapper,
     }
   }
 </script>

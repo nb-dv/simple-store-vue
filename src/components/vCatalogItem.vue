@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'v-catalog-item',
+  name: 'vCatalogItem',
   props: {
     product_data: {
       type: Object,
@@ -34,6 +34,7 @@ export default {
 <style lang="scss">
   .v-catalog-item {
     flex-basis: 25%;
+    min-width: 180px;
     padding: $padding*2;
     margin-bottom: $margin*2;
     box-shadow: 0 0 8px 0 #e0e0e0;
@@ -45,9 +46,14 @@ export default {
     &__name {
       display: flex;
       align-items: center;
+      justify-content: center;
       height: 72px;
       margin-top: auto;
       margin-bottom: auto;
+    }
+
+    &__price {
+      margin-bottom: 1em;
     }
   }
 </style>

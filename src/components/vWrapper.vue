@@ -1,26 +1,27 @@
 <template>
   <div class="v-wrapper">
-    <v-catalog />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-  import vCatalog from './vCatalog';
+import { mapGetters } from 'vuex';
 
-  export default {
-    name: 'VWrapper',
-    components: {
-      vCatalog,
-    },
-    props: {},
-    data() {
-      return {};
-    },
-    computed: {},
-    methods: {},
-    watch: {},
-    mounted() {},
-  };
+export default {
+  name: 'vWrapper',
+  props: {},
+  data() {
+    return {};
+  },
+  computed: {
+    ...mapGetters([
+      'CART',
+    ]),
+  },
+  methods: {},
+  watch: {},
+  mounted() {}
+};
 </script>
 
 <style>

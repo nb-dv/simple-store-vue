@@ -1,11 +1,17 @@
 <template>
   <div class="v-catalog">
+    <router-link :to="{name: 'cart', params: {cart_data: CART}}">
+      <div class="v-catalog__link_to_cart">
+        <img src="../assets/images/cart.png">
+        {{ CART.length }}
+      </div>
+    </router-link>
     <div class="v-catalog__list">
       <v-catalog-item
-          v-for="product in PRODUCTS"
-          :key="product._id"
-          :product_data="product"
-          @addToCart="addToCart"
+        v-for="product in PRODUCTS"
+        :key="product._id"
+        :product_data="product"
+        @addToCart="addToCart"
       />
     </div>
   </div>
@@ -28,6 +34,7 @@ export default {
   computed: {
     ...mapGetters([
       'PRODUCTS',
+      'CART',
     ]),
   },
   methods: {
@@ -41,22 +48,35 @@ export default {
   },
   mounted() {
     this.GET_PRODUCTS_FROM_API()
-        .then(response => {
-          if(response.data) {
-            console.log('test : Data loaded');
-          }
-        })
+      .then(response => {
+        if(response.data) {
+          console.log('test : Data loaded');
+        }
+      })
   }
 }
 </script>
 
 <style lang="scss">
-.v-catalog {
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  .v-catalog {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5em;
+    }
+
+    &__link_to_cart {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: $padding;
+      border: 1px solid #ccc;
+
+      img {
+        width: 16px;
+      }
+    }
   }
-}
 </style>

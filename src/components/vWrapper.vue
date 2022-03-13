@@ -1,24 +1,14 @@
 <template>
   <div class="v-wrapper">
-    <vCatalog />
-    <vCart
-        v-if="CART.length"
-        :cart_data="CART"
-    />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import vCatalog from './vCatalog';
-import vCart from './vCart';
 import { mapGetters } from 'vuex';
 
 export default {
   name: 'vWrapper',
-  components: {
-    vCatalog,
-    vCart,
-  },
   props: {},
   data() {
     return {};
@@ -30,7 +20,7 @@ export default {
   },
   methods: {},
   watch: {},
-  mounted() {},
+  mounted() {}
 };
 </script>
 

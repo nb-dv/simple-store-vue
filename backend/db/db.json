@@ -1,122 +1,110 @@
-{
-  "products": [
+[
     {
-      "_id": "1",
       "name": "MOUNTAINEERING BACKPACK 70 LITRES  – MAKALU 45/70",
       "category": "backpack",
       "image": "product-1.jpg",
       "color": "red",
       "price": 79.99,
       "brand": "SIMOND",
-      "rating": "4",
-      "numReviews": "10",
-      "countInStock": "6"
+      "rating": 4,
+      "numReviews": 10,
+      "countInStock": 6
     },
     {
-      "_id": "2",
       "name": "BACKPACK 70L TRAVEL 500",
       "category": "backpack",
       "image": "product-2.jpg",
       "color": "grey",
       "price": 85.99,
       "brand": "FORCLAZ",
-      "rating": "4",
-      "numReviews": "51"
+      "rating": 4,
+      "numReviews": 51
     },
     {
-      "_id": "3",
       "name": "TRAVEL BACKPACK 60 L",
       "category": "backpack",
       "image": "product-3.jpg",
       "color": "blue",
       "price": 59.99,
       "brand": "FORCLAZ",
-      "rating": "4.5",
-      "numReviews": "45"
+      "rating": 4.5,
+      "numReviews": 45
     },
     {
-      "_id": "4",
       "name": "FORCLAZ MOUNTAIN TREKKING BACKPACK 90 L",
       "category": "backpack",
       "image": "product-4.jpg",
       "color": "grey",
       "brand": "FORCLAZ",
       "price": 60.00,
-      "rating": "2.5",
-      "numReviews": "198",
-      "countInStock": "6"
+      "rating": 2.5,
+      "numReviews": 198,
+      "countInStock": 6
     },
     {
-      "_id": "5",
       "name": "TREKKING BAG - EXTEND FROM 80 TO 120 L",
       "category": "bag",
       "image": "product-5.jpg",
       "color": "yellow",
       "price": "65.99",
       "brand": "FORCLAZ",
-      "rating": "4.5",
+      "rating": 4.5,
       "numReviews": "89",
       "countInStock": "6"
 
     },
     {
-      "_id": "6",
       "name": "Base Camp Duffel M Tnf Red/Tnf Black",
       "category": "bag",
       "image": "product-6.jpg",
       "price": 89.99,
       "brand": "The North Face",
-      "rating": "0",
-      "numReviews": "0",
-      "countInStock": "30"
+      "rating": 0,
+      "numReviews": 0,
+      "countInStock": 30
     },
     {
-      "_id": "7",
       "name": "TREKKING BAG DUFFEL 500 EXTEND 40–60 L",
       "category": "bag",
       "image": "product-7.jpg",
       "color": "blue",
       "price": 49.99,
       "brand": "FORCLAZ",
-      "rating": "4.4",
-      "numReviews": "89",
-      "countInStock": "6"
+      "rating": 4.4,
+      "numReviews": 89,
+      "countInStock": 6
     },
     {
-      "_id": "8",
       "name": "Backpack Deuter Speed Lite 24 Chili-Lava",
       "category": "backpack",
       "image": "product-8.jpg",
       "color": "red",
       "price": 79.99,
       "brand": "Deuter",
-      "rating": "5",
-      "numReviews": "2",
-      "countInStock": "6"
+      "rating": 5,
+      "numReviews": 2,
+      "countInStock": 6
     },
     {
-      "_id": "9",
       "name": "FAST HIKING FH900 ULTRA LIGHT BACKPACK 14+5L",
       "category": "backpack",
       "image": "product-9.jpg",
       "color": "blue",
       "price": 39.99,
       "brand": "QUECHUA",
-      "rating": "4.5",
-      "numReviews": "45",
-      "countInStock": "6"
+      "rating": 4.5,
+      "numReviews": 45,
+      "countInStock": 6
     },
     {
-      "_id": "10",
       "name": "Backpack Waldfuchs Cardinal-Maron",
       "category": "backpack",
       "image": "product-10.jpg",
       "color": "pink",
       "price": 29.99,
       "brand": "Deuter",
-      "rating": "0",
-      "numReviews": "0",
-      "countInStock": "30"
+      "rating": 0,
+      "numReviews": 0,
+      "countInStock": 30
     }
   ]
-}

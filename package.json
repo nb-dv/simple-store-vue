@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "backend-install": "npm install --prefix backend",
+    "server": "npm run dev --prefix backend"
   },
   "dependencies": {
     "axios": "^0.26.0",
